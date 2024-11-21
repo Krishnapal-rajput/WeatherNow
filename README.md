@@ -60,7 +60,7 @@ This will start the React app locally. Open your browser and go to <code>http://
     - <code>App.css</code>: Styles for the app.
 
 ## API Used
-The weather data is fetched from the Open-Meteo API[https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true], which provides free weather data for various locations based on coordinates.
+The weather data is fetched from the [Open-Meteo API](https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true), which provides free weather data for various locations based on coordinates.
 
 ## Error Handling
 - If the city is not found, a message saying "City not found" will be displayed.
@@ -70,4 +70,4 @@ The weather data is fetched from the Open-Meteo API[https://api.open-meteo.com/v
 Contributions are welcome! If you want to add new features, fix bugs, or improve the documentation, feel free to fork the repository, create a branch, and submit a pull request.
 
 ## License
-This project is open source and available under the MIT License[./LICENSE].
+This project is open source and available under the [MIT License](./LICENSE).
