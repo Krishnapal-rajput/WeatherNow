@@ -1,0 +1,152 @@
+/* App.css */
+
+/* Basic container styles */
+.app-container {
+  text-align: center; /* Center align all text within the container */
+  font-family: 'Arial', sans-serif; /* Use Arial font for text */
+  padding: 20px; /* Add padding around the container */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: #f5f5f5; /* Set a light gray background color */
+}
+
+/* Header styles */
+.header {
+  margin-bottom: 30px; /* Space below the header */
+}
+
+.title {
+  font-size: 3rem; /* Large font size for the title */
+  color: #2c3e50; /* Dark blue-grey color for the title text */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 10px; /* Space below the title */
+  text-transform: uppercase; /* Make the title text uppercase */
+  letter-spacing: 1px; /* Add letter spacing for a clean look */
+}
+
+/* Search bar and button styles */
+.search-form {
+  margin-top: 20px; /* Space above the search form */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align the search form */
+  align-items: center; /* Align the items vertically in the center */
+}
+
+.search-input {
+  padding: 12px; /* Add padding inside the input field */
+  font-size: 1.2rem; /* Set the font size inside the input */
+  border: 2px solid #ccc; /* Light grey border around the input */
+  border-radius: 5px; /* Rounded corners for the input */
+  width: 280px; /* Fixed width for the input field */
+  margin-right: 15px; /* Space to the right of the input */
+  outline: none; /* Remove default outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition on border color change */
+}
+
+.search-input:focus {
+  border-color: #3498db; /* Change border color to blue on focus */
+}
+
+.search-button {
+  padding: 12px 25px; /* Add padding around the button */
+  background-color: #3498db; /* Set blue background color for the button */
+  color: white; /* White text color */
+  font-size: 1.2rem; /* Font size for the button text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+  transition: background-color 0.3s ease; /* Smooth transition on background color change */
+}
+
+.search-button:hover {
+  background-color: #2980b9; /* Change the button background color on hover */
+}
+
+/* Suggestions list styles */
+.suggestions-list {
+  list-style: none; /* Remove default list styling */
+  margin-top: 5px; /* Space above the suggestions list */
+  padding-left: 0; /* Remove left padding */
+  max-height: 200px; /* Limit the height of the list */
+  overflow-y: auto; /* Allow vertical scrolling if the list exceeds the max height */
+  border: 1px solid #ccc; /* Light grey border around the list */
+  border-radius: 5px; /* Rounded corners for the list */
+  background-color: white; /* White background for the list */
+  position: absolute; /* Position the list absolutely to overlap with other content */
+  width: 100%; /* Make the list the same width as the input */
+  z-index: 1000; /* Ensure the suggestions list appears above other elements */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect around the list */
+}
+
+.suggestions-list li {
+  padding: 10px; /* Add padding inside each list item */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over a list item */
+  transition: background-color 0.3s ease; /* Smooth transition for background color on hover */
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0; /* Change the background color on hover */
+}
+
+/* Loading and error messages */
+.loading,
+.error {
+  font-size: 1.2rem; /* Font size for the loading/error messages */
+  margin-top: 20px; /* Space above the messages */
+}
+
+.error {
+  color: red; /* Red color for the error message */
+  font-weight: bold; /* Make the error message bold */
+}
+
+/* Weather display styles */
+.weather-display {
+  margin-top: 40px; /* Space above the weather display */
+  padding: 25px; /* Add padding inside the weather display box */
+  border: 1px solid #ccc; /* Light grey border around the display */
+  border-radius: 10px; /* Rounded corners for the weather display */
+  background-color: #ffffff; /* White background for the display */
+  display: inline-block; /* Make the display inline with other elements */
+  max-width: 400px; /* Limit the maximum width of the weather display */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow around the weather display */
+}
+
+.weather-city {
+  font-size: 2rem; /* Large font size for the city name */
+  font-weight: bold; /* Make the city name bold */
+  color: #2c3e50; /* Dark blue-grey color for the city name */
+}
+
+.weather-info {
+  font-size: 1.1rem; /* Slightly smaller font size for weather info */
+  margin-top: 15px; /* Space above the weather information */
+}
+
+.weather-info p {
+  margin: 8px 0; /* Space above and below each weather info paragraph */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  /* Adjust input width on smaller screens */
+  .search-input {
+    width: 230px; /* Narrower input on mobile */
+  }
+
+  /* Adjust button width on smaller screens */
+  .search-button {
+    width: 180px; /* Narrower button on mobile */
+  }
+
+  /* Adjust weather display on smaller screens */
+  .weather-display {
+    width: 90%; /* Make the weather display take up 90% of the screen width */
+    margin: 0 auto; /* Center the weather display */
+  }
+
+  /* Adjust title size on smaller screens */
+  .title {
+    font-size: 2.2rem; /* Smaller title font size on mobile */
+  }
+}
