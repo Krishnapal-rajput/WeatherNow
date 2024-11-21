@@ -19,7 +19,7 @@ WeatherNow is a simple and efficient weather forecasting application built using
 ## Live Demo
 
 You can try the live version of the WeatherNow app by visiting the following link:
-[Live WeatherNow App](https://your-live-link-here.com)
+[Live WeatherNow App](https://krishnas-weather.netlify.app/)
 
 ## Setup and Installation
 
